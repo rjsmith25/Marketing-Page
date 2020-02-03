@@ -223,7 +223,7 @@ body {
   height: auto;
 }
 header {
-  background: url("/img/body-building.jpg") center center;
+  background: url("../img/body-building.jpg") center center;
   background-repeat: no-repeat;
   height: 600px;
   color: white;
