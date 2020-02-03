@@ -1,0 +1,412 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCu6KVjbNBYlgoKej70l0w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCp6KVjbNBYlgoKejYHtFyPN4Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCjC3jsGyI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjsGyI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Italic'), local('Lora-Italic'), url(https://fonts.gstatic.com/s/lora/v14/0QIhMX1D_JOuMw_LIftO.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lora Bold Italic'), local('Lora-BoldItalic'), url(https://fonts.gstatic.com/s/lora/v14/0QIiMX1D_JOuMw_Dmt5emNGu.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v14/0QIgMX1D_JOuO7HeNtxunw.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Lora", serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+header {
+  background: url("/img/body-building.jpg") center center;
+  background-repeat: no-repeat;
+  height: 600px;
+  color: white;
+}
+nav {
+  display: flex;
+  padding-top: 20px;
+  font-size: 24px;
+}
+@media (max-width: 500px) {
+  nav {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+nav .brand-name {
+  color: white;
+  text-decoration: none;
+}
+nav .nav-list {
+  display: flex;
+  margin-left: auto;
+}
+nav .nav-list li {
+  margin-right: 20px;
+}
+nav .nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+nav .nav-list li:last-child {
+  margin-right: 0;
+}
+.header-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+}
+.header-bottom h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+.header-bottom p {
+  font-size: 32px;
+  font-weight: 200;
+}
+.header-bottom .cta-button {
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: #0c93d3;
+  border: 1px solid #0c93d3;
+  height: 40px;
+  width: 200px;
+}
+.features {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.feature {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.feature .marketing-description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .feature .marketing-description {
+    width: 100%;
+  }
+}
+.feature .marketing-description h1 {
+  color: #0c93d3;
+  font-weight: bold;
+  font-size: 24px;
+}
+.feature .marketing-description p {
+  font-size: 18px;
+}
+@media (max-width: 500px) {
+  .feature .marketing-description p {
+    margin-bottom: 10px;
+  }
+}
+.feature .marketing-image {
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .feature .marketing-image {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .feature .invert-market-image {
+    order: 2;
+  }
+}
+@media (max-width: 500px) {
+  .feature .invert-market-description {
+    order: 1;
+  }
+}
+.contact-us {
+  background-color: #a6a6a6;
+  padding: 40px 0;
+}
+@media (max-width: 500px) {
+  .contact-us {
+    padding: 40px 10px;
+  }
+}
+.contact-us .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .contact-form {
+    width: 100%;
+  }
+}
+.contact-form h2 {
+  color: #0c93d3;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contact-form .form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.contact-form .form-group input {
+  width: 48%;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.contact-form .contact-form-subject {
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.contact-form .contact-form-message {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.contact-form .contact-button {
+  width: 120px;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  background-color: #0c93d3;
+  font-size: 14px;
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #232022;
+  height: 100px;
+}
