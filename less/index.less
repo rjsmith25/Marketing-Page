@@ -1,8 +1,10 @@
+// google fonts
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap");
 
-// Variables
-@primary-color: #0c93d3;
+// less imports
+@import "variables";
+@import "mixins";
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -186,7 +188,7 @@ body {
   height: 500px;
   color: white;
   .header-bottom {
-    display: flex;
+    .flex-layout();
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -195,7 +197,7 @@ body {
 }
 
 nav {
-  display: flex;
+  .flex-layout();
   padding-top: 20px;
   font-size: 24px;
   @media (max-width: 500px) {
@@ -207,7 +209,7 @@ nav {
     text-decoration: none;
   }
   .nav-list {
-    display: flex;
+    .flex-layout();
     margin-left: auto;
     li {
       margin-right: 20px;
@@ -223,7 +225,7 @@ nav {
 }
 
 .header-bottom {
-  display: flex;
+  .flex-layout();
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -255,12 +257,12 @@ nav {
 }
 
 .feature {
-  display: flex;
+  .flex-layout();
   justify-content: space-between;
   margin-bottom: 20px;
   flex-wrap: wrap;
   .marketing-description {
-    display: flex;
+    .flex-layout();
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -306,14 +308,14 @@ nav {
     padding: 40px 10px;
   }
   .container {
-    display: flex;
+    .flex-layout();
     justify-content: center;
     align-items: center;
   }
 }
 
 .contact-form {
-  display: flex;
+  .flex-layout();
   flex-direction: column;
   width: 60%;
   background-color: white;
@@ -330,7 +332,7 @@ nav {
     margin-bottom: 10px;
   }
   .form-group {
-    display: flex;
+    .flex-layout();
     justify-content: space-between;
     margin-bottom: 10px;
     input {
@@ -369,7 +371,7 @@ nav {
 }
 
 .team-mates {
-  display: flex;
+  .flex-layout();
   flex-wrap: wrap;
   justify-content: space-between;
   @media (max-width: 500px) {
@@ -383,7 +385,7 @@ nav {
       height: 300px;
     }
     .description {
-      display: flex;
+      .flex-layout();
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -399,7 +401,7 @@ nav {
 }
 
 footer {
-  display: flex;
+  .flex-layout();
   justify-content: center;
   align-items: center;
   color: white;
