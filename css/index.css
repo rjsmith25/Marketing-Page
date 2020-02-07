@@ -222,11 +222,24 @@ body {
   width: 100%;
   height: auto;
 }
-header {
-  background: url("../img/body-building.jpg") center center;
-  background-repeat: no-repeat;
+.home-header {
+  background: url("../img/body-building.jpg") no-repeat center center;
+  background-size: cover;
   height: 600px;
   color: white;
+}
+.about-us {
+  background: url("../img/weight-racks.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  color: white;
+}
+.about-us .header-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
 }
 nav {
   display: flex;
@@ -401,6 +414,41 @@ nav .nav-list li:last-child {
   background-color: #0c93d3;
   font-size: 14px;
   cursor: pointer;
+}
+.team {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+.team-mates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .team-mates {
+    justify-content: center;
+  }
+}
+.team-mates .team-mate {
+  border: 1px solid white;
+  margin-bottom: 20px;
+}
+.team-mates .team-mate img {
+  width: 300px;
+  height: 300px;
+}
+.team-mates .team-mate .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 80px;
+  padding: 5px;
+}
+.team-mates .team-mate .description .team-job {
+  margin-top: 5px;
+  font-size: 14px;
 }
 footer {
   display: flex;

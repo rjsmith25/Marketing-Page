@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap");
 
+// Variables
+@primary-color: #0c93d3;
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -170,11 +173,25 @@ body {
   height: auto;
 }
 
-header {
-  background: url("../img/body-building.jpg") center center;
-  background-repeat: no-repeat;
+.home-header {
+  background: url("../img/body-building.jpg") no-repeat center center;
+  background-size: cover;
   height: 600px;
   color: white;
+}
+
+.about-us {
+  background: url("../img/weight-racks.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  color: white;
+  .header-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+  }
 }
 
 nav {
@@ -225,8 +242,8 @@ nav {
     cursor: pointer;
     margin-top: 10px;
     border-radius: 20px;
-    background-color: #0c93d3;
-    border: 1px solid #0c93d3;
+    background-color: @primary-color;
+    border: 1px solid @primary-color;
     height: 40px;
     width: 200px;
   }
@@ -252,7 +269,7 @@ nav {
       width: 100%;
     }
     h1 {
-      color: #0c93d3;
+      color: @primary-color;
       font-weight: bold;
       font-size: 24px;
     }
@@ -307,7 +324,7 @@ nav {
     width: 100%;
   }
   h2 {
-    color: #0c93d3;
+    color: @primary-color;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -340,9 +357,44 @@ nav {
     color: white;
     border-radius: 5px;
     height: 40px;
-    background-color: #0c93d3;
+    background-color: @primary-color;
     font-size: 14px;
     cursor: pointer;
+  }
+}
+
+.team {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+.team-mates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media (max-width: 500px) {
+    justify-content: center;
+  }
+  .team-mate {
+    border: 1px solid white;
+    margin-bottom: 20px;
+    img {
+      width: 300px;
+      height: 300px;
+    }
+    .description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      height: 80px;
+      padding: 5px;
+      .team-job {
+        margin-top: 5px;
+        font-size: 14px;
+      }
+    }
   }
 }
 
